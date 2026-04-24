@@ -17,9 +17,9 @@ body {
 
 .container > div {
     display: flex;
-    border: 1px black solid;
     background-color: white;
     flex-grow: 0;
+    border: 1px rgba(104, 104, 104, 0.05) solid;
     flex-shrink: 0;
     aspect-ratio: 1/1;
     flex-wrap: wrap;;
