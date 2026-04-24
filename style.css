@@ -1,6 +1,7 @@
 
 * {
     box-sizing: border-box;
+    font-size: 18px;
 }
 body {
     margin: 0;
@@ -10,25 +11,48 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .container > div {
     display: flex;
     border: 1px black solid;
     background-color: white;
-    flex: 0 0 6.25%;
+    flex-grow: 0;
+    flex-shrink: 0;
     aspect-ratio: 1/1;
     flex-wrap: wrap;;
 }
 .container {
     display: flex;
     padding: 0;
+    margin: 0;
     flex-wrap: wrap;
     flex-direction: row;
-    flex: 0 0 40%;
+    flex: 0 0 100%;
+    aspect-ratio: 1/1;
     justify-content: center;
     align-items: center;
     border: 2px black solid;
-    max-height: 100vh;
-    max-width: 100vw;
+    max-height: 90vh;
+    max-width: 90vw;
+}
+
+#inputBtn {
+    padding: 3px 20px;
+    text-align: center;
+}
+
+#inputNumber{
+    padding: 3px 0;
+    width: 120px;
+    text-align: center;
+}
+
+.topPart {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
 }
